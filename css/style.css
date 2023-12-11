@@ -1,0 +1,277 @@
+/* Reset CSS */
+
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Initial */
+
+body {
+  background-color: #000000;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+strong {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.button {
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px auto 0;
+  vertical-align: middle;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 0 none;
+  cursor: pointer;
+  outline: 0;
+  min-width: 220px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 900;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 3;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button:hover {
+  background-color: #61d666;
+}
+
+/* /Initial */
+
+/* Main CSS */
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+p {
+  font-size: 160%;
+}
+
+#background {
+  cursor: none;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#win {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000aa;
+  cursor: default;
+  z-index: 9999;
+}
+
+#win div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #e0e0e0;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#health p,
+.controls p {
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+  line-height: normal;
+}
+
+#health span,
+.controls span {
+  color: #e61e1e;
+}
+
+h2 {
+  font-size: 16px;
+  color: #ff9800;
+  margin: 10px 0;
+  font-weight: 900;
+}
+
+.score-wrap {
+  margin: 10px 0;
+}
+
+h1 {
+  margin: 20px 0 0;
+  font-size: 22px;
+  color: #ff9800;
+  font-weight: 900;
+}
