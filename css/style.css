@@ -141,6 +141,7 @@ table {
 }
 
 /* Initial */
+#container, .header {display: none;}
 
 body {
   background-color: #000000;

@@ -1,6 +1,15 @@
 
 $( document ).ready(function() {
-	
+  $(".buttons button").click(function () {
+    const selectedLevel = parseInt($(this).data("level"));
+    $("#levleSelect").hide();
+    $("#container").show();
+    $(".header").show();
+    startGame(selectedLevel);
+  });
+
+  function startGame(level) {
+
 	
 	var getUrlParameter = function getUrlParameter(sParam) {
 		var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -17,7 +26,7 @@ $( document ).ready(function() {
 		}
 	};
 	
-	var mkw = getUrlParameter('mkw');
+	var mkw = level;
 	
 
 	var winDiv = $('#win');
@@ -520,6 +529,7 @@ $( document ).ready(function() {
 	else {
 		$('body').html('mkw not defined or currect. Please select how many players with mkw 1-4');
 	}
+}
 
 
 });

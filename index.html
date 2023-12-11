@@ -18,19 +18,33 @@
 
   <body >
 	<div class="container">
+    <h1>Survive Game</h1>
+    <br>
+    <div id="levleSelect" style="text-align: center;">
+      <p>Please select number of players 1-4:</p>
+      <div class="buttons">
+        <button data-level="1">1</button>
+        <button data-level="2">2</button>
+        <button data-level="3">3</button>
+        <button data-level="4">4</button>
+      </div>
+
+    </div>
 		<div class="header">
-			<h1>Survive Game</h1>
 			<br>
 			<div class="score-wrap">
 				<p>Score: <span id="score">0</span></p>
 			</div>
 		</div>
+    
 		<div id="container">
 			<div id="win"></div>
 			<canvas id="background" height="600" width="600"></canvas>
 		</div>
+    <div class="header">
 		<h2>Health:</h2>
 		<div id="health"></div>
+  </div>
 		<br>
 		<div class="controls">
 			<h2>Controls:</h2>
